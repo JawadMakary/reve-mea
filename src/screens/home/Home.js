@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../../components/Banner";
 import Card from "../../components/Card";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import PropertyValuation from "../../components/PropertyValuation";
 
@@ -47,6 +48,7 @@ const Home = () => {
 
       </div>
       <PropertyValuation/>
+      <Footer/>
           </>
   );
 };
