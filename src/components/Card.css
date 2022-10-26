@@ -1,0 +1,179 @@
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* end global rules */
+/* start real estate */
+.container .content {
+    background-color: #f6f6f5;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.container .content .box {
+    background-color: white;
+    box-shadow: 0 0 10px #ddd;
+}
+.container .content .box.featured {
+    position: relative;
+}
+/* .container .content .box.featured::before {
+    content: "Featured";
+    position: absolute;
+    background-color: rgb(231, 85, 12);
+    color: white;
+    font-weight: bold;
+    padding: 0 5px 0 10px;
+    height: 30px;
+    top: -15px;
+    z-index: 1;
+} */
+/* .container .content .box.featured::after {
+    content: "";
+    position: absolute;
+    border: 15px solid;
+    border-color: transparent transparent  transparent rgb(231, 85, 12);
+    top: -15px;
+    left: 75px;
+    z-index: 1;
+} */
+.container .content .box .image  {
+    position: relative;
+}
+/* .container .content .box:not(:last-of-type) .image::before  {
+    content: "Hot";
+    position: absolute;
+    background-color: rgb(234 55 55);
+    color: white;
+    padding: 0 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    bottom: 30px;
+    left: 15px;
+    z-index: 1;
+} */
+/* .container .content .box .image::after  {
+    content: "\f004";
+    font-family: "font awesome 5 free";
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    bottom: 30px;
+    right: 20px;
+    font-size: 25px;
+} */
+.container .content .box .image .overlay  {
+    width: 100%;
+    height: calc(100% - 10px);
+    background-color: #02436465;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.container .content .box .image .overlay::before  {
+    content: "View Property";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border: 1px solid white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.container .content .box:hover .image .overlay  {
+    display: block;
+}
+.container .content .box .image img {
+    max-width: 100%;
+}
+.container .content .box .info {
+    padding: 20px;
+}
+.container .content .box .info h3 {
+    text-transform: capitalize;
+}
+.container .content .box .info p {
+    color: #777;
+    margin: 10px 0;
+}
+.container .content .box .info .home-parts {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.container .content .box .info .home-parts .parts > span {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+    margin-bottom: 15px;
+    display: block;
+}
+.container .content .box .info .home-parts .parts .number i {
+    margin-right: 10px;
+    color: #777;
+    font-size: 20px;
+}
+.container .content .box .info .home-parts .parts .number span {
+    font-size: 14px;
+    font-weight: bold;
+}
+.container .content .box .info .price span:first-of-type {
+    text-transform: capitalize;
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+}
+.container .content .box .info .price span:last-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    color: #009688;
+}
+/* start real estate */
+
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+

@@ -1,15 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
-import Header from './components/Header';
-import Banner from './components/Banner';
+import React from "react";
+import "./App.css";
+
+import Home from "./screens/home/Home";
 
 function App() {
   return (
     <div className="App">
-    <Header/>
-    <Banner/>
+     <Home/>
     </div>
   );
 }
