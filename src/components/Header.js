@@ -68,17 +68,17 @@ function Header({ placeholder }) {
         <p className="header__item">Commercial</p>
         <p className="header__item">Holiday Homes</p>
         <p className="header__item">Mortgage Services </p>
-        <ul class="header-items">
-          <li class="header-item has-sub" tabindex="0">
+        <ul className="header-items">
+          <li className="header-item has-sub" tabIndex="0">
             Explore More
-            <ul class="header-sub-items">
-              <li class="header-sub-item">
+            <ul className="header-sub-items">
+              <li className="header-sub-item">
                 <a href="#">About Us</a>
               </li>
-              <li class="header-sub-item">
+              <li className="header-sub-item">
                 <a href="#">Guides</a>
               </li>
-              <li class="header-sub-item">
+              <li className="header-sub-item">
                 <a href="#">Contact Us</a>
               </li>
             </ul>
