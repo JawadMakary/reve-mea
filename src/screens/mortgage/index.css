@@ -1,0 +1,11 @@
+.mortgage__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+.mortgage__right {
+    flex: 0.7 1;
+}
+._2QxqScDSDuK4P0ny7KZKNr {
+    display: none;
+}
