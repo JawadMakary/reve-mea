@@ -91,9 +91,9 @@ ul {
     right: 20px;
     font-size: 25px;
 } */
-.container .content .box .image .overlay  {
+.container .content .box .image .overlay {
     width: 100%;
-    height: calc(100% - 10px);
+    height: calc(100% - -1px);
     background-color: #02436465;
     position: absolute;
     top: 0;
@@ -161,7 +161,11 @@ ul {
 }
 /* start real estate */
 
-
+.price {
+    text-align: center;
+    background: #E3ECEE;
+    border-radius: 10px;
+}
 
 * {
     -webkit-box-sizing: border-box;

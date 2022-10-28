@@ -3,13 +3,13 @@ import "./PropertyValuation.css";
 const PropertyValuation = () => {
   return (
     <div>
-      <div class="propertyValuation__container">
-        <h1 class="brand">
+      <div className="propertyValuation__container">
+        <h1 className="brand">
           <span>Book a property valuation</span>
         </h1>
 
-        <div class="wrapper">
-          <div class="company-info">
+        <div className="wrapper">
+          <div className="company-info">
             <h3>Book a property valuation</h3>
 
             <span>
@@ -19,7 +19,7 @@ const PropertyValuation = () => {
             </span>
           </div>
 
-          <div class="contact">
+          <div className="contact">
             <h3>E-mail Us</h3>
 
             <form id="contact-form">
@@ -43,13 +43,13 @@ const PropertyValuation = () => {
                 <input type="text" name="phone" id="phone" />
               </p>
 
-              <p class="full">
+              <p className="full">
                 <label>Property Address</label>
                 <input type="text" name="phone" id="phone" />
 
               </p>
 
-              <p class="full">
+              <p className="full">
                 <button type="submit">Submit Details</button>
               </p>
             </form>

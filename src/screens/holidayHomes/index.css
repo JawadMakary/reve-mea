@@ -1,0 +1,10 @@
+.holidays__home__container {
+    margin: 20px 0px;
+}
+.holidays__home__container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.holiday {
+    margin-bottom: 20px;
+}
