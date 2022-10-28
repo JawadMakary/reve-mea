@@ -34,7 +34,7 @@ const Card = ({title,description,bedRoomNumber,bathRoomNumber,size,price}) => {
                         </div>
                     </div>
                 </div>
-                <div className="price">
+                <div className="card__price">
                     <span>for sale</span>
                     <span>${price}</span>
                 </div>
