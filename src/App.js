@@ -2,9 +2,10 @@ import React, { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import * as ROUTES from "./constants/routes";
-import { getOffPlans, getPosts } from "./api/axios";
+import { getOffPlans, getPosts, getResident } from "./api/axios";
 import SearchBar from "./components/SearchBar";
 import ListPage from "./components/ListPage";
+import FloatButton from "./components/FloatButton";
 function App() {
   const Home = lazy(() => import("./screens/home/Home"));
   const OffPlan = lazy(() => import("./screens/offPlan/index"));
@@ -43,11 +44,13 @@ function App() {
   const [searchResults, setSearchResults] = useState([]);
   const [offPl, setOffPl] = useState([]);
   const [offPlanSearch, setOffPlanSearch] = useState([]);
+  const [resident, setResident] = useState([]);
+  const [residentSearch, setResidentSearch] = useState([]);
   useEffect(() => {
     getPosts()
       .then((json) => {
         setPosts(json);
-        console.log(posts)
+        console.log(posts);
         return json;
       })
       .then((json) => {
@@ -63,6 +66,17 @@ function App() {
       })
       .then((jsonData) => {
         setOffPlanSearch(jsonData);
+      });
+
+    getResident()
+      .then((jsonData) => {
+        setResident(jsonData);
+        console.log(offPl);
+
+        return jsonData;
+      })
+      .then((jsonData) => {
+        setResidentSearch(jsonData);
       });
   }, []);
 
@@ -86,7 +100,11 @@ function App() {
             />
           </Routes>
           <Routes>
-            <Route path={ROUTES.RESIDENTIAL} element={<Residential />} />
+            <Route path={ROUTES.RESIDENTIAL} element={<Residential
+              posts={resident}
+              setSearchResults={setResidentSearch}
+              searchResults={residentSearch}
+            />} />
           </Routes>
           <Routes>
             <Route
@@ -116,6 +134,7 @@ function App() {
           <Routes>
             <Route path={ROUTES.CONTACT} element={<Contact />} />
           </Routes>
+          <FloatButton/>
         </Suspense>
       </Router>
       {/* <SearchBar posts={posts} setSearchResults={setSearchResults} />
