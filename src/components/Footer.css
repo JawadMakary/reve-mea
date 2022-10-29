@@ -1,9 +1,9 @@
 .site-footer {
-  background-color: #26272b;
+  background-color: #024364;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
-  color: #737373;
+  color: #fff;
 }
 .site-footer hr {
   border-top-color: #bbb;
@@ -20,7 +20,7 @@
   letter-spacing: 2px;
 }
 .site-footer a {
-  color: #737373;
+  color: #fff;
 }
 .site-footer a:hover {
   color: #3366cc;
@@ -34,7 +34,7 @@
   display: block;
 }
 .footer-links a {
-  color: #737373;
+  color: #fff;
 }
 .footer-links a:active,
 .footer-links a:focus,
@@ -55,7 +55,7 @@
   margin-left: 6px;
   margin-right: 0;
   border-radius: 100%;
-  background-color: #33353d;
+  background-color: #fff;
 }
 .copyright-text {
   margin: 0;
@@ -86,13 +86,13 @@
 .social-icons li.title {
   margin-right: 15px;
   text-transform: uppercase;
-  color: #96a2b2;
+  color: #fff;
   font-weight: 700;
   font-size: 13px;
 }
 .social-icons a {
   background-color: #eceeef;
-  color: #818a91;
+  color: #000;
   font-size: 16px;
   display: inline-block;
   line-height: 44px;
@@ -117,11 +117,14 @@
   width: 34px;
   font-size: 14px;
 }
+.Instagram:hover {
+  background-color: #ea4c89 !important;
+}
 .social-icons a.facebook:hover {
   background-color: #3b5998;
 }
 .social-icons a.twitter:hover {
-  background-color: #00aced;
+  background-color: #ea4c89;
 }
 .social-icons a.linkedin:hover {
   background-color: #007bb6;

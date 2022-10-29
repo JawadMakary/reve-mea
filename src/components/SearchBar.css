@@ -1,0 +1,24 @@
+.input__search {
+  display: flex;
+  justify-content: end;
+}
+.searchIcon__container {
+  display: flex;
+  justify-content: end;
+}
+form.form__search__container {
+  display: flex;
+  justify-content: end;
+
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 52px;
+  height: 60px;
+  width: 26%;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 10px 5px;
+}

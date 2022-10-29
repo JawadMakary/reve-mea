@@ -1,8 +1,10 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import * as ROUTES from "./constants/routes";
-
+import { getOffPlans, getPosts } from "./api/axios";
+import SearchBar from "./components/SearchBar";
+import ListPage from "./components/ListPage";
 function App() {
   const Home = lazy(() => import("./screens/home/Home"));
   const OffPlan = lazy(() => import("./screens/offPlan/index"));
@@ -37,6 +39,33 @@ function App() {
       <span></span>
     </div>
   );
+  const [posts, setPosts] = useState([]);
+  const [searchResults, setSearchResults] = useState([]);
+  const [offPl, setOffPl] = useState([]);
+  const [offPlanSearch, setOffPlanSearch] = useState([]);
+  useEffect(() => {
+    getPosts()
+      .then((json) => {
+        setPosts(json);
+        console.log(posts)
+        return json;
+      })
+      .then((json) => {
+        setSearchResults(json);
+      });
+
+    getOffPlans()
+      .then((jsonData) => {
+        setOffPl(jsonData);
+        console.log(offPl);
+
+        return jsonData;
+      })
+      .then((jsonData) => {
+        setOffPlanSearch(jsonData);
+      });
+  }, []);
+
   return (
     <div className="App">
       <Router>
@@ -45,13 +74,31 @@ function App() {
             <Route path={ROUTES.HOME} element={<Home />} />
           </Routes>
           <Routes>
-            <Route path={ROUTES.OFFPLAN} element={<OffPlan />} />
+            <Route
+              path={ROUTES.OFFPLAN}
+              element={
+                <OffPlan
+                  posts={offPl}
+                  setSearchResults={setOffPlanSearch}
+                  searchResults={offPlanSearch}
+                />
+              }
+            />
           </Routes>
           <Routes>
             <Route path={ROUTES.RESIDENTIAL} element={<Residential />} />
           </Routes>
           <Routes>
-            <Route path={ROUTES.HOLIDAYHOMES} element={<HolidayHomes />} />
+            <Route
+              path={ROUTES.HOLIDAYHOMES}
+              element={
+                <HolidayHomes
+                  posts={posts}
+                  setSearchResults={setSearchResults}
+                  searchResults={searchResults}
+                />
+              }
+            />
           </Routes>
           <Routes>
             <Route path={ROUTES.COMMERCIAL} element={<Commercial />} />
@@ -62,9 +109,7 @@ function App() {
           <Routes>
             <Route path={ROUTES.ABOUT} element={<About />} />
           </Routes>
-          <Routes>
-            <Route path={ROUTES.ABOUT} element={<About />} />
-          </Routes>
+
           <Routes>
             <Route path={ROUTES.GUIDES} element={<Guides />} />
           </Routes>
@@ -73,6 +118,8 @@ function App() {
           </Routes>
         </Suspense>
       </Router>
+      {/* <SearchBar posts={posts} setSearchResults={setSearchResults} />
+      <ListPage searchResults={searchResults}/> */}
     </div>
   );
 }
