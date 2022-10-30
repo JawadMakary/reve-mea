@@ -2,7 +2,7 @@ import React, { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import * as ROUTES from "./constants/routes";
-import { getOffPlans, getPosts, getResident } from "./api/axios";
+import { getCommercial, getOffPlans, getPosts, getResident } from "./api/axios";
 import SearchBar from "./components/SearchBar";
 import ListPage from "./components/ListPage";
 import FloatButton from "./components/FloatButton";
@@ -46,6 +46,8 @@ function App() {
   const [offPlanSearch, setOffPlanSearch] = useState([]);
   const [resident, setResident] = useState([]);
   const [residentSearch, setResidentSearch] = useState([]);
+  const [commercial, setCommercial] = useState([]);
+  const [commercialSearch, setCommercialSearch] = useState([]);
   useEffect(() => {
     getPosts()
       .then((json) => {
@@ -78,6 +80,16 @@ function App() {
       .then((jsonData) => {
         setResidentSearch(jsonData);
       });
+    getCommercial()
+      .then((jsonData) => {
+        setCommercial(jsonData);
+        console.log(offPl);
+
+        return jsonData;
+      })
+      .then((jsonData) => {
+        setCommercialSearch(jsonData);
+      });
   }, []);
 
   return (
@@ -100,11 +112,16 @@ function App() {
             />
           </Routes>
           <Routes>
-            <Route path={ROUTES.RESIDENTIAL} element={<Residential
-              posts={resident}
-              setSearchResults={setResidentSearch}
-              searchResults={residentSearch}
-            />} />
+            <Route
+              path={ROUTES.RESIDENTIAL}
+              element={
+                <Residential
+                  posts={resident}
+                  setSearchResults={setResidentSearch}
+                  searchResults={residentSearch}
+                />
+              }
+            />
           </Routes>
           <Routes>
             <Route
@@ -119,7 +136,16 @@ function App() {
             />
           </Routes>
           <Routes>
-            <Route path={ROUTES.COMMERCIAL} element={<Commercial />} />
+            <Route
+              path={ROUTES.COMMERCIAL}
+              element={
+                <Commercial
+                  posts={commercial}
+                  setSearchResults={setCommercialSearch}
+                  searchResults={commercialSearch}
+                />
+              }
+            />
           </Routes>
           <Routes>
             <Route path={ROUTES.MORTGAGE} element={<Mortgage />} />
@@ -134,7 +160,7 @@ function App() {
           <Routes>
             <Route path={ROUTES.CONTACT} element={<Contact />} />
           </Routes>
-          <FloatButton/>
+          <FloatButton />
         </Suspense>
       </Router>
       {/* <SearchBar posts={posts} setSearchResults={setSearchResults} />

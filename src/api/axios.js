@@ -12,3 +12,7 @@ export const getResident = async () => {
   const response = await axios.get("./resident.json");
   return response.data;
 };
+export const getCommercial = async () => {
+  const response = await axios.get("./commercial.json");
+  return response.data;
+};
