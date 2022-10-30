@@ -4,7 +4,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp'
 const logo = "https://i.imgur.com/Sbc6Fln.jpg";
 
 const FloatButton = () => {
-  const chatMsg = "Hello there! 🤝 \n Please enter your name , email so we can help?";
+  const chatMsg = "Hello there! 🤝 \n Please enter your name , email so we can help";
   const statusMsg = "Typically replies within 30 minutes";
   return (
     <FloatingWhatsApp
