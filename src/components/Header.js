@@ -2,7 +2,7 @@
 // import "react-date-range/dist/styles.css"; // main style file
 // import "react-date-range/dist/theme/default.css"; // theme css file
 // import { DateRangePicker } from "react-date-range";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import Image from "next/image";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
@@ -10,6 +10,19 @@ import * as ROUTES from "../constants/routes";
 
 // import { useRouter } from "next/dist/client/router";
 function Header({ placeholder }) {
+  const [showBurgerMenu, setShowBurgerMenu] = useState(false);
+  const [menuItemsVisibility, setMenuItemsVisibility] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth < 968) {
+      setShowBurgerMenu(true);
+    } else {
+      setShowBurgerMenu(false);
+    }
+  }, []);
+
+
+
+
   const navigate = useNavigate();
 
   const [searchInput, setSearchInput] = useState("");
@@ -63,6 +76,9 @@ function Header({ placeholder }) {
       </div> */}
       {/* right */}
       {/* tailwind-> first design for mobile then change for medium (md) */}
+      {!showBurgerMenu ? (
+
+     
       <div className="header__right">
         <p className="header__item" onClick={() => navigate(ROUTES.OFFPLAN)}>
           Off-Plan
@@ -85,6 +101,8 @@ function Header({ placeholder }) {
         <p className="header__item" onClick={() => navigate(ROUTES.MORTGAGE)}>
           Mortgage Services{" "}
         </p>
+    
+
         <ul className="header-items">
           <li className="header-item has-sub" tabIndex="0">
             Explore More
@@ -111,8 +129,44 @@ function Header({ placeholder }) {
           </li>
         </ul>
       </div>
+      ):(
+        <div class="example">
+<div class="menu-burger">
+  <input type="checkbox" />
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <line x1="4" y1="6" x2="20" y2="6" />
+    <line x1="4" y1="12" x2="20" y2="12" />
+    <line x1="4" y1="18" x2="20" y2="18" />
+  </svg>
+  <ul class="menu-burger__item-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</div>
+</div>
+      )}
     </header>
   );
 }
 
 export default Header;
+
+
+{/* <div class="example">
+<div class="menu-burger">
+  <input type="checkbox" />
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <line x1="4" y1="6" x2="20" y2="6" />
+    <line x1="4" y1="12" x2="20" y2="12" />
+    <line x1="4" y1="18" x2="20" y2="18" />
+  </svg>
+  <ul class="menu-burger__item-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+</div>
+</div> */}
