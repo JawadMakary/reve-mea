@@ -20,9 +20,6 @@ function Header({ placeholder }) {
     }
   }, []);
 
-
-
-
   const navigate = useNavigate();
 
   const [searchInput, setSearchInput] = useState("");
@@ -63,92 +60,112 @@ function Header({ placeholder }) {
           onClick={() => navigate(ROUTES.HOME)}
         />
       </div>
-      {/* middle */}
-      {/* <div className="header__center ">
-        <input
-          type="text"
-          placeholder={placeholder || "Start your search"}
-          className="header__search"
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-        />
-        <SearchIcon className="search__icon " />
-      </div> */}
-      {/* right */}
-      {/* tailwind-> first design for mobile then change for medium (md) */}
+
       {!showBurgerMenu ? (
+        <div className="header__right">
+          <p className="header__item" onClick={() => navigate(ROUTES.OFFPLAN)}>
+            Off-Plan
+          </p>
+          <p
+            className="header__item"
+            onClick={() => navigate(ROUTES.RESIDENTIAL)}
+          >
+            Residential
+          </p>
+          <p
+            className="header__item"
+            onClick={() => navigate(ROUTES.COMMERCIAL)}
+          >
+            Commercial
+          </p>
+          <p
+            className="header__item"
+            onClick={() => navigate(ROUTES.HOLIDAYHOMES)}
+          >
+            Holiday Homes
+          </p>
+          <p className="header__item" onClick={() => navigate(ROUTES.MORTGAGE)}>
+            Mortgage Services{" "}
+          </p>
 
-     
-      <div className="header__right">
-        <p className="header__item" onClick={() => navigate(ROUTES.OFFPLAN)}>
-          Off-Plan
-        </p>
-        <p
-          className="header__item"
-          onClick={() => navigate(ROUTES.RESIDENTIAL)}
-        >
-          Residential
-        </p>
-        <p className="header__item" onClick={() => navigate(ROUTES.COMMERCIAL)}>
-          Commercial
-        </p>
-        <p
-          className="header__item"
-          onClick={() => navigate(ROUTES.HOLIDAYHOMES)}
-        >
-          Holiday Homes
-        </p>
-        <p className="header__item" onClick={() => navigate(ROUTES.MORTGAGE)}>
-          Mortgage Services{" "}
-        </p>
-    
+          <ul className="header-items">
+            <li className="header-item has-sub" tabIndex="0">
+              Explore More
+              <ul className="header-sub-items">
+                <li
+                  className="header-sub-item"
+                  onClick={() => navigate(ROUTES.ABOUT)}
+                >
+                  <a href="">About Us</a>
+                </li>
+                <li
+                  className="header-sub-item"
+                  onClick={() => navigate(ROUTES.GUIDES)}
+                >
+                  <a href="">Guides</a>
+                </li>
+                <li
+                  className="header-sub-item"
+                  onClick={() => navigate(ROUTES.CONTACT)}
+                >
+                  <a href="">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      ) : (
+        <div className="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label className="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul className="menu__box">
+            <li onClick={() => navigate(ROUTES.HOME)}>
+              <a className="menu__item">Home</a>
+            </li>
+            <li>
+              <a
+                className="menu__item"
+                onClick={() => navigate(ROUTES.OFFPLAN)}
+              >
+                {" "}
+                Off-Plan
+              </a>
+            </li>
 
-        <ul className="header-items">
-          <li className="header-item has-sub" tabIndex="0">
-            Explore More
-            <ul className="header-sub-items">
-              <li
-                className="header-sub-item"
-                onClick={() => navigate(ROUTES.ABOUT)}
-              >
-                <a href="">About Us</a>
-              </li>
-              <li
-                className="header-sub-item"
-                onClick={() => navigate(ROUTES.GUIDES)}
-              >
-                <a href="">Guides</a>
-              </li>
-              <li
-                className="header-sub-item"
+            <li onClick={() => navigate(ROUTES.RESIDENTIAL)}>
+              <a className="menu__item"> Residential</a>
+            </li>
+            <li onClick={() => navigate(ROUTES.COMMERCIAL)}>
+              <a className="menu__item"> Commercial</a>
+            </li>
+
+            <li onClick={() => navigate(ROUTES.HOLIDAYHOMES)}>
+              <a className="menu__item"> Holiday Homes</a>
+            </li>
+            <li onClick={() => navigate(ROUTES.MORTGAGE)}>
+              <a className="menu__item">Mortgage Services</a>
+            </li>
+            <li onClick={() => navigate(ROUTES.ABOUT)}>
+              <a className="menu__item">About Us</a>
+            </li>
+            <li onClick={() => navigate(ROUTES.GUIDES)}>
+              <a className="menu__item">Guides</a>
+            </li>
+            <li>
+              <a
+                className="menu__item"
                 onClick={() => navigate(ROUTES.CONTACT)}
               >
-                <a href="">Contact Us</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      ):(
-        <div className="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label className="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-    
-        <ul className="menu__box">
-          <li><a className="menu__item" href="#">Главная</a></li>
-          <li><a className="menu__item" href="#">Проекты</a></li>
-          <li><a className="menu__item" href="#">Команда</a></li>
-          <li><a className="menu__item" href="#">Блог</a></li>
-          <li><a className="menu__item" href="#">Контакты</a></li>
-        </ul>
-      </div>
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
       )}
     </header>
   );
 }
 
 export default Header;
-
-
