@@ -130,22 +130,20 @@ function Header({ placeholder }) {
         </ul>
       </div>
       ):(
-        <div class="example">
-<div class="menu-burger">
-  <input type="checkbox" />
-  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <line x1="4" y1="6" x2="20" y2="6" />
-    <line x1="4" y1="12" x2="20" y2="12" />
-    <line x1="4" y1="18" x2="20" y2="18" />
-  </svg>
-  <ul class="menu-burger__item-list">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul>
-</div>
-</div>
+        <div className="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label className="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul className="menu__box">
+          <li><a className="menu__item" href="#">Главная</a></li>
+          <li><a className="menu__item" href="#">Проекты</a></li>
+          <li><a className="menu__item" href="#">Команда</a></li>
+          <li><a className="menu__item" href="#">Блог</a></li>
+          <li><a className="menu__item" href="#">Контакты</a></li>
+        </ul>
+      </div>
       )}
     </header>
   );
@@ -154,19 +152,3 @@ function Header({ placeholder }) {
 export default Header;
 
 
-{/* <div class="example">
-<div class="menu-burger">
-  <input type="checkbox" />
-  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <line x1="4" y1="6" x2="20" y2="6" />
-    <line x1="4" y1="12" x2="20" y2="12" />
-    <line x1="4" y1="18" x2="20" y2="18" />
-  </svg>
-  <ul class="menu-burger__item-list">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-  </ul>
-</div>
-</div> */}

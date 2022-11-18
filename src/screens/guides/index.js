@@ -1,8 +1,14 @@
 import React from 'react'
-
+import Banner from "../../components/Banner";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 const Guides = () => {
   return (
-    <div>index</div>
+    <div className='guide'>
+      <Header/>
+      <Banner/>
+      <Footer/>
+    </div>
   )
 }
 

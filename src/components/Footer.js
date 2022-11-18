@@ -35,21 +35,21 @@ const Footer = () => {
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li>
-                <a href="http://scanfcode.com/about/">Off Plan</a>
+                <a href="">Off Plan</a>
               </li>
               <li>
-                <a href="http://scanfcode.com/contact/">Residential</a>
+                <a href="">Residential</a>
               </li>
               <li>
-                <a href="http://scanfcode.com/contribute-at-scanfcode/">
+                <a href="">
                   Commercial
                 </a>
               </li>
               <li>
-                <a href="http://scanfcode.com/privacy-policy/">Holiday Homes</a>
+                <a href="">Holiday Homes</a>
               </li>
               <li>
-                <a href="http://scanfcode.com/sitemap/">Mortgage Services</a>
+                <a href="">Mortgage Services</a>
               </li>
             </ul>
           </div>
