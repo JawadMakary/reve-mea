@@ -57,7 +57,7 @@ function App() {
       })
       .then((json) => {
         setSearchResults(json);
-      });
+      },[]);
 
     getOffPlans()
       .then((jsonData) => {

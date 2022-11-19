@@ -25,7 +25,7 @@ const Commercial = ({ searchResults, posts, setSearchResults }) => {
   return (
     <div className="holidayhomes">
       <Header />
-      <Banner posts={posts} setSearchResults={setSearchResults} />
+      {/* <Banner posts={posts} setSearchResults={setSearchResults} /> */}
       <SearchBar posts={posts} setSearchResults={setSearchResults} />
       {/* <div className="holidays__home__container"> */}
       {/* <HolidayHome

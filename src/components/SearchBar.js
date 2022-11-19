@@ -1,24 +1,29 @@
 import { SearchIcon } from "@heroicons/react/solid";
-import './SearchBar.css'
+import { useRef } from "react";
+import "./SearchBar.css";
 const SearchBar = ({ posts, setSearchResults }) => {
-  const handleSubmit = (e) => e.preventDefault();
-
-  const handleSearchChange = (e) => {
-    if (!e.target.value) return setSearchResults(posts);
+  const searchRef = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!searchRef.current.value) return setSearchResults(posts);
 
     const resultsArray = posts.filter(
-      (post) => post.title.toLowerCase().includes(e.target.value)
-      //  || post.price.includes(e.target.value)
+      (post) => post.title.toLowerCase().includes(searchRef.current.value)
+      //  || post.price.includes(searchRef.current.value)
     );
 
     setSearchResults(resultsArray);
   };
 
+  // const handleSearchChange = (e) => {
+
+  // };
+
   return (
     <>
-      <div className="search__bar__container">
+      <div className="search_bar_container">
         <form
-          className="form__search__container"
+          className="form_search_container"
           onSubmit={(e) => handleSubmit(e)}
         >
           <div className="input__search">
@@ -27,11 +32,17 @@ const SearchBar = ({ posts, setSearchResults }) => {
               type="text"
               id="search"
               placeholder="Start Your Search"
-              onChange={handleSearchChange}
+              ref={searchRef}
             />
+            <div className="search__icon__submit">
+              <SearchIcon />
+            </div>
           </div>
           <div className="searchIcon__container">
-            <SearchIcon className="search__icon " />
+            {/* <SearchIcon className="search__icon " /> */}
+          </div>
+          <div className="search__submit">
+            <input className="submit__btn" type="submit" value="Search"></input>
           </div>
           {/* <button className="search__button"> */}
           {/* </button> */}

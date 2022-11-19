@@ -3,6 +3,7 @@ import "./HolidayHome.css";
 const OffPlan = ({ posts }) => {
   return (
     <div
+      key={posts.id}
       className="holiday"
       style={{ background: `url(${posts.imgUrl})`, backgroundSize: "cover" }}
     >
@@ -12,7 +13,7 @@ const OffPlan = ({ posts }) => {
           <p>{posts.title}</p>
           <hr />
         </div>
-        
+
         <div className="items price">
           {/* <p className="old">$699</p> */}
           <p className="new">${posts.price}</p>
