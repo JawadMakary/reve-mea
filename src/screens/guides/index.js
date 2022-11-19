@@ -6,7 +6,10 @@ const Guides = () => {
   return (
     <div className='guide'>
       <Header/>
-      <Banner/>
+      <Banner 
+         title={"Guides"}
+         showButtons={false}
+      />
       <Footer/>
     </div>
   )

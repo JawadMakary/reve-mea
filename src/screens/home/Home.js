@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner title={"A Community You Can Call Home"} showButtons={true} />
       <div className="container">
         <div className="content">
           <Card
@@ -49,10 +49,19 @@ const Home = () => {
       </div>
       <PropertyValuation />
       <div className="info__main__container">
-        <Info title={"Get In Touch"} description={"Our management team has over 100 years of experience combined in Dubai's property market."} />
-        <Info title={"Leadership"} description={"Our management team has over 100 years of experience combined in Dubai's property market."} />
+        <Info
+          title={"Get In Touch"}
+          description={
+            "Our management team has over 100 years of experience combined in Dubai's property market."
+          }
+        />
+        <Info
+          title={"Leadership"}
+          description={
+            "Our management team has over 100 years of experience combined in Dubai's property market."
+          }
+        />
         <Info title={"Header 3"} description={"this is the 3rd description"} />
-
       </div>
       <Footer />
     </>

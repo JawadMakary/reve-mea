@@ -20,7 +20,10 @@ const Mortgage = () => {
   return (
     <div className="mortgage">
       <Header />
-      <Banner />
+      <Banner
+      title={"Mortgage Services"}
+      showButtons={false}
+      />
       <div className="mortgage__container">
         <div className="mortgage__left">
           <h2 className="mortgage__header">Mortgage Calculator</h2>

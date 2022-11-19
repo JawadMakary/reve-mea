@@ -7,7 +7,10 @@ const About = () => {
   return (
     <div>
       <Header />
-      <Banner />
+      <Banner
+      title={"Who We Are"}
+      showButtons={false}
+      />
       <Footer />
     </div>
   );
