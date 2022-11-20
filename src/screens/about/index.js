@@ -8,7 +8,7 @@ import Header from "../../components/Header";
 import Reasons from "../../components/Reasons";
 import Seniors from "../../components/Seniors";
 import Service from "../../components/Service";
-
+import './About.css'
 const About = () => {
   return (
     <div>
