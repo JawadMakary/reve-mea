@@ -1,0 +1,15 @@
+.seniors {
+    text-align: center;
+    margin: 35px 0px;
+}
+.seniors {
+    background: url('https://i.imgur.com/iM7zcpS.jpg');
+    background-size: cover;
+    height: 206px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}

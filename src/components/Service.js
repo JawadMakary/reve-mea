@@ -26,7 +26,7 @@ const Service = () => {
         </div>
         <div class="col-md-6">
           <div class="box">
-            <div class="our-services speedup">
+            <div class="our-services settings">
               <div class="icon">
                 {" "}
                 <img src="https://i.imgur.com/KMbnpFF.png" />{" "}
@@ -56,7 +56,7 @@ const Service = () => {
       <div class="row">
         <div class="col-md-6">
           <div class="box">
-            <div class="our-services backups">
+            <div class="our-services settings">
               <div class="icon">
                 {" "}
                 <img src="https://i.imgur.com/vdH9LKi.png" />{" "}
@@ -75,7 +75,7 @@ const Service = () => {
         </div>
         <div class="col-md-6">
           <div class="box">
-            <div class="our-services ssl">
+            <div class="our-services settings">
               <div class="icon">
                 {" "}
                 <img src="https://i.imgur.com/v6OnUqu.png" />{" "}

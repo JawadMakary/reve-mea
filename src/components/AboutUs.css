@@ -1,0 +1,20 @@
+img.aboutUs__img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+.aboutUs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.aboutUs__left {
+    display: flex;
+    flex-direction: column;
+    flex: 0.6;
+}
+p.aboutUs__text {
+    font-size: 18px;
+    line-height: 1.9;
+}
