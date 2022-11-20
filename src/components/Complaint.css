@@ -1,0 +1,25 @@
+
+span.complaint__text {
+    margin: 20px 0px;
+}
+.complaint__container {
+    display: flex;
+   flex: 0.6;
+    margin: 10px 0px;
+}
+img.complaint__img {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+.complaint {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.complaint__container {
+    display: flex;
+    flex: 0.6 1;
+    margin: 10px 0px;
+    flex-direction: column;
+}

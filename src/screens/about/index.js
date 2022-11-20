@@ -1,6 +1,8 @@
 import React from "react";
 import AboutUs from "../../components/AboutUs";
 import Banner from "../../components/Banner";
+import Careers from "../../components/Careers";
+import Complaint from "../../components/Complaint";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Reasons from "../../components/Reasons";
@@ -16,6 +18,8 @@ const About = () => {
       <Reasons />
       <Seniors/>
       {/* <Service /> */}
+      <Careers/>
+      <Complaint/>
       <Footer />
     </div>
   );
