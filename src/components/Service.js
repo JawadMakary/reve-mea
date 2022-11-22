@@ -12,14 +12,15 @@ const Service = () => {
             <div class="our-services settings">
               <div class="icon">
                 {" "}
-                <img src="https://i.imgur.com/6NKPrhO.png" />{" "}
+                <img
+                  className="guide__img"
+                  src="https://i.imgur.com/tuutVr3.png"
+                />{" "}
               </div>
               <h4>Buy With Us</h4>
               <p>
-                Looking for the property of your dream? Reve's Buyer Services
-                help you in securing one. We provide you with: Initial
-                consultation ,Making connections ,Negotiation ,Guidance
-                ,Valuation & Post-sale
+              lorem ipsum dolor sit amet. lorem ipsum dolor sit amet. lorem
+                ipsum dolor sit amet.
               </p>
             </div>
           </div>
@@ -29,13 +30,15 @@ const Service = () => {
             <div class="our-services settings">
               <div class="icon">
                 {" "}
-                <img src="https://i.imgur.com/KMbnpFF.png" />{" "}
+                <img
+                  className="guide__img"
+                  src="https://i.imgur.com/UjUFrMh.png"
+                />{" "}
               </div>
               <h4>Sell With Us</h4>
               <p>
-                Do you find the selling process stressful? Make a smart move and
-                request our assistance. We provide you with: Pricing Your
-                Property ,Marketing ,Proper communication & Confidentiality
+              lorem ipsum dolor sit amet. lorem ipsum dolor sit amet. lorem
+                ipsum dolor sit amet.
               </p>
             </div>
           </div>
@@ -59,16 +62,15 @@ const Service = () => {
             <div class="our-services settings">
               <div class="icon">
                 {" "}
-                <img src="https://i.imgur.com/vdH9LKi.png" />{" "}
+                <img
+                  className="guide__img"
+                  src="https://i.imgur.com/1WvzI3I.png"
+                />{" "}
               </div>
               <h4>Let With Us</h4>
               <p>
-                So many factors make your real estate fascinating and
-                exceptional, our concierge services succeed in making it so. We
-                provide an Experience to the true meaning of luxury .Our agents
-                will be delighted to drive you from your location to your
-                property with the most luxurious automobiles anytime and
-                anywhere with punctuality.{" "}
+                lorem ipsum dolor sit amet. lorem ipsum dolor sit amet. lorem
+                ipsum dolor sit amet.
               </p>
             </div>
           </div>
@@ -78,13 +80,15 @@ const Service = () => {
             <div class="our-services settings">
               <div class="icon">
                 {" "}
-                <img src="https://i.imgur.com/v6OnUqu.png" />{" "}
+                <img
+                  className="guide__img"
+                  src="https://i.imgur.com/2YnhhUP.png"
+                />{" "}
               </div>
               <h4>Rent With Us</h4>
               <p>
-                You will be thrilled to get to know more about our landlord
-                services from Understanding your property ,valuation and
-                marketing to Screening tenants
+              lorem ipsum dolor sit amet. lorem ipsum dolor sit amet. lorem
+                ipsum dolor sit amet.
               </p>
             </div>
           </div>

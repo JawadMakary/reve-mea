@@ -17,7 +17,14 @@
     transition: all .4s ease-in-out;
     box-shadow: 0 0 25px 0 rgba(20, 27, 202, .17)
 }
-
+img.guide__img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background: #024364;
+    padding: 22px;
+    border-radius: 50%;
+}
 .our-services .icon {
     margin-bottom: -21px;
     transform: translateY(-50%);

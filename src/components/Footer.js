@@ -19,13 +19,13 @@ const Footer = () => {
             <h6>Support</h6>
             <ul className="footer-links">
               <li>
-                <a href="http://scanfcode.com/category/c-language/">
+                <a href="/contact">
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="http://scanfcode.com/category/front-end-development/">
-                  Book a property valuation
+                <a href="/mortgage">
+                  Mortgage Services
                 </a>
               </li>
             </ul>
@@ -35,21 +35,21 @@ const Footer = () => {
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li>
-                <a href="">Off Plan</a>
+                <a href="/offplan">Off Plan</a>
               </li>
               <li>
-                <a href="">Residential</a>
+                <a href="/residential">Residential</a>
               </li>
               <li>
-                <a href="">
+                <a href="/commercial">
                   Commercial
                 </a>
               </li>
               <li>
-                <a href="">Holiday Homes</a>
+                <a href="/holidayhomes">Holiday Homes</a>
               </li>
               <li>
-                <a href="">Mortgage Services</a>
+                <a href="/mortgage">Mortgage Services</a>
               </li>
             </ul>
           </div>
