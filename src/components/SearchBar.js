@@ -8,7 +8,8 @@ const SearchBar = ({ posts, setSearchResults }) => {
     if (!searchRef.current.value) return setSearchResults(posts);
 
     const resultsArray = posts.filter(
-      (post) => post.title.toLowerCase().includes(searchRef.current.value)
+      (post) =>
+        post.title.toLowerCase().includes(searchRef.current.value.toLowerCase())
       //  || post.price.includes(searchRef.current.value)
     );
 

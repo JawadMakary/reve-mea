@@ -14,7 +14,7 @@ const Service = () => {
                 {" "}
                 <img src="https://i.imgur.com/6NKPrhO.png" />{" "}
               </div>
-              <h4>Buyer Services</h4>
+              <h4>Buy With Us</h4>
               <p>
                 Looking for the property of your dream? Reve's Buyer Services
                 help you in securing one. We provide you with: Initial
@@ -31,7 +31,7 @@ const Service = () => {
                 {" "}
                 <img src="https://i.imgur.com/KMbnpFF.png" />{" "}
               </div>
-              <h4>Seller Services</h4>
+              <h4>Sell With Us</h4>
               <p>
                 Do you find the selling process stressful? Make a smart move and
                 request our assistance. We provide you with: Pricing Your
@@ -61,7 +61,7 @@ const Service = () => {
                 {" "}
                 <img src="https://i.imgur.com/vdH9LKi.png" />{" "}
               </div>
-              <h4>Concierge Services</h4>
+              <h4>Let With Us</h4>
               <p>
                 So many factors make your real estate fascinating and
                 exceptional, our concierge services succeed in making it so. We
@@ -80,7 +80,7 @@ const Service = () => {
                 {" "}
                 <img src="https://i.imgur.com/v6OnUqu.png" />{" "}
               </div>
-              <h4>Landlord Services</h4>
+              <h4>Rent With Us</h4>
               <p>
                 You will be thrilled to get to know more about our landlord
                 services from Understanding your property ,valuation and

@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Banner from "../../components/Banner";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+
+import ChatIcon from "@mui/icons-material/Chat";
+import CloseIcon from "@mui/icons-material/Close";
 import "./Contact.css";
+import Bot from "../../components/Bot";
 const Contact = () => {
+  const [botSelect, setBotSelect] = useState(false);
   return (
     <div className="contact">
       <Header />
@@ -57,6 +60,10 @@ const Contact = () => {
           <img className="contact__img" src="https://i.imgur.com/ILbwtpX.jpg" />
         </div>
       </div>
+      <div className="bot" onClick={() => setBotSelect(!botSelect)}>
+        {!botSelect ? <ChatIcon style={{"color":"#fff"}} /> : <CloseIcon style={{"color":"#fff"}} />}
+      </div>
+      {botSelect ? <Bot /> : ""}
       <Footer />
     </div>
   );
