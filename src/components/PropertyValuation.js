@@ -4,9 +4,7 @@ const PropertyValuation = () => {
   return (
     <div>
       <div className="propertyValuation__container">
-        <h1 className="brand">
-          <span>Book a property valuation</span>
-        </h1>
+      
 
         <div className="wrapper">
           <div className="company-info">

@@ -7,10 +7,11 @@ import ChatIcon from "@mui/icons-material/Chat";
 import CloseIcon from "@mui/icons-material/Close";
 import "./Contact.css";
 import Bot from "../../components/Bot";
+import RegisterYourInterest from "../../components/RegisterYourInterest";
 const Contact = () => {
   const [botSelect, setBotSelect] = useState(false);
   return (
-    <div className="contact">
+    <div className="contact_us">
       <Header />
       <Banner bg={"https://i.imgur.com/YKYsrJU.png"} title={"Contact Us"} showButtons={false} />
       <div class="container">
@@ -59,11 +60,14 @@ const Contact = () => {
         <div className="form__details">
           <img className="contact__img" src="https://i.imgur.com/ILbwtpX.jpg" />
         </div>
+
       </div>
+    
       <div className="bot" onClick={() => setBotSelect(!botSelect)}>
-        {!botSelect ? <ChatIcon style={{"color":"#fff"}} /> : <CloseIcon style={{"color":"#fff"}} />}
+        {!botSelect ? <ChatIcon style={{ "color": "#fff" }} /> : <CloseIcon style={{ "color": "#fff" }} />}
       </div>
       {botSelect ? <Bot /> : ""}
+      <RegisterYourInterest/>
       <Footer />
     </div>
   );
