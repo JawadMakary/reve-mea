@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 190px;
+  height: 20px;
+  margin: auto;
+}
+.loader span {
+  width: 2px;
+  height: 20px;
+  background-color: #024364;
+  position: absolute;
+  left: 0;
+  transform-origin: center bottom;
+  transform: rotate(-90deg);
+  animation-name: load;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.loader span:nth-child(1) {
+  left: 9px;
+  animation-delay: 0.05s;
+}
+.loader span:nth-child(2) {
+  left: 18px;
+  animation-delay: 0.1s;
+}
+.loader span:nth-child(3) {
+  left: 27px;
+  animation-delay: 0.15s;
+}
+.loader span:nth-child(4) {
+  left: 36px;
+  animation-delay: 0.2s;
+}
+.loader span:nth-child(5) {
+  left: 45px;
+  animation-delay: 0.25s;
+}
+.loader span:nth-child(6) {
+  left: 54px;
+  animation-delay: 0.3s;
+}
+.loader span:nth-child(7) {
+  left: 63px;
+  animation-delay: 0.35s;
+}
+.loader span:nth-child(8) {
+  left: 72px;
+  animation-delay: 0.4s;
+}
+.loader span:nth-child(9) {
+  left: 81px;
+  animation-delay: 0.45s;
+}
+.loader span:nth-child(10) {
+  left: 90px;
+  animation-delay: 0.5s;
+}
+.loader span:nth-child(11) {
+  left: 99px;
+  animation-delay: 0.55s;
+}
+.loader span:nth-child(12) {
+  left: 108px;
+  animation-delay: 0.6s;
+}
+.loader span:nth-child(13) {
+  left: 117px;
+  animation-delay: 0.65s;
+}
+.loader span:nth-child(14) {
+  left: 126px;
+  animation-delay: 0.7s;
+}
+.loader span:nth-child(15) {
+  left: 135px;
+  animation-delay: 0.75s;
+}
+.loader span:nth-child(16) {
+  left: 144px;
+  animation-delay: 0.8s;
+}
+.loader span:nth-child(17) {
+  left: 153px;
+  animation-delay: 0.85s;
+}
+.loader span:nth-child(18) {
+  left: 162px;
+  animation-delay: 0.9s;
+}
+.loader span:nth-child(19) {
+  left: 171px;
+  animation-delay: 0.95s;
+}
+.loader span:nth-child(20) {
+  left: 180px;
+  animation-delay: 1s;
+}
+
+@keyframes load {
+  to {
+    transform: rotate(450deg);
+  }
+}

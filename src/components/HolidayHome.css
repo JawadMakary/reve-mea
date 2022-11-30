@@ -1,0 +1,100 @@
+
+  .holiday {
+    width: 300px;
+    height: 300px;
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    /* left: 0; */
+    /* bottom: 0; */
+    margin: auto;
+    /* background: url("https://724ee15caf23916ea8a1-3f3d4e21c42b782027ec42d076ea0e2c.ssl.cf3.rackcdn.com/x.prod/665rb494/fotos/2/164214317120d4de228b02d282d1a1709d5c618308/1642143183755e7b7dc3182f755d34295c31d321dd.jpg"); */
+    background-color: black;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+}
+  
+  .holiday__overlay {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    background: #024364c9;
+    color: #FEF5DF;
+    opacity: 0;
+    transition: all 0.5s;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+  }
+  
+  .head {
+    font-size: 30px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+  }
+  .head hr {
+    display: block;
+    width: 0;
+    border: none;
+    border-bottom: solid 2px #FEF5DF;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transition: all 0.5s;
+  }
+  
+  .price {
+    font-size: 22px;
+    line-height: 10px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+  }
+  .price .old {
+    text-decoration: line-through;
+    color: #b3b3b3;
+  }
+  
+  .cart {
+    font-size: 12px;
+    opacity: 0;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+    transform: translateY(40px);
+    transition: all 0.7s;
+  }
+  .cart i {
+    font-size: 16px;
+  }
+  .cart span {
+    margin-left: 10px;
+  }
+  
+  .holiday:hover .holiday__overlay {
+    opacity: 1;
+  }
+  .holiday:hover .holiday__overlay .head {
+    transform: translateY(0px);
+  }
+  .holiday:hover .holiday__overlay hr {
+    width: 75px;
+    transition-delay: 0.4s;
+  }
+  .holiday:hover .holiday__overlay .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+  .holiday:hover .holiday__overlay .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;
+  }
