@@ -13,9 +13,7 @@ const RegisterYourInterest = () => {
           <h3>Register Your Interest</h3>
 
           <span>
-            We have a waitlist of clients ready to view properties, extensive
-            comparable community data and a trusted reputation. Just three of
-            the reasons why people choose us.
+          Find your favorite property and advance to the next step. Subscribe with REVE now to make all your dreams come true!
           </span>
         </div>
 
