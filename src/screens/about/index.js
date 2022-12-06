@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div>
       <Header />
-      <Banner bg={"https://i.imgur.com/RleacLw.jpg"} title={"Who We Are"} showButtons={false} />
+      <Banner bg={"https://i.imgur.com/BvlcVd5.png"} title={"Who We Are"} showButtons={false} />
       <AboutUs />
       <Reasons />
       <Seniors/>

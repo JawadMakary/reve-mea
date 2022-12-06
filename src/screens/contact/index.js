@@ -13,12 +13,11 @@ const Contact = () => {
   return (
     <div className="contact_us">
       <Header />
-      <Banner bg={"https://i.imgur.com/YKYsrJU.png"} title={"Contact Us"} showButtons={false} />
+      <Banner bg={"https://i.imgur.com/TsuZbL5.jpg"} title={"Contact Us"} showButtons={false} />
       <div class="container">
         <form class="form">
           <span class="form-title">
-            Contact our real estate experts to discuss your needs. Our team will
-            guide you throught the entire process.
+          Pick your suitable plan. Contact us to ensure a premium property investment experience.
           </span>
           <div class="grid">
             <div class="form-group">

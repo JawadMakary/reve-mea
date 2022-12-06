@@ -49,17 +49,14 @@ const Mortgage = () => {
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
               >
-                <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                  General settings
+                <Typography sx={{ width: "100%", flexShrink: 0 }}>
+               Why should you collaborate with REVE MEA?
                 </Typography>
-                <Typography sx={{ color: "text.secondary" }}>
-                  I am an accordion
-                </Typography>
+              
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Nulla facilisi. Phasellus sollicitudin nulla et quam mattis
-                  feugiat. Aliquam eget maximus est, id dignissim quam.
+                  Sharing a big knowledge and experience with over 10 years of experience, Reve MEA is your guide to choose the best property plan by answering all your questions and inquiries to get a better understanding before doing any purchase process.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -73,18 +70,14 @@ const Mortgage = () => {
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
               >
-                <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                  Advanced settings
+                <Typography sx={{ width: "100%", flexShrink: 0 }}>
+              What are the advantages of property investment through a plan?
                 </Typography>
-                <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
-                </Typography>
+               
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                  Integer sit amet egestas eros, vitae egestas augue. Duis vel
-                  est augue.
+                Property investment comes with lots of advantages, most importantly is the ability for a potentially high capital growth and hedging against inflation. In addition to being a long-term investment, it is a tangible asset value with multiple benefits such as rental income.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -98,18 +91,14 @@ const Mortgage = () => {
                 aria-controls="panel17bh-content"
                 id="panel3bh-header"
               >
-                <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                  Advanced settings
+                <Typography sx={{ width: "100%", flexShrink: 0 }}>
+              How can I benefit from mortgage?
                 </Typography>
-                <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
-                </Typography>
+               
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                  Integer sit amet egestas eros, vitae egestas augue. Duis vel
-                  est augue.
+                It is the process of buying a property through an agreement with the lender that allows the latter to regain the property once the client fails to pay his payments. It makes it easy for a client as he pays the payment on a long-term basis with a fixed interest rate.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -122,18 +111,14 @@ const Mortgage = () => {
                 aria-controls="panel5bh-content"
                 id="panel3bh-header"
               >
-                <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                  Advanced settings
+                <Typography sx={{ width: "100%", flexShrink: 0 }}>
+              What are the risks of investing in properties?
                 </Typography>
-                <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
-                </Typography>
+              
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                  Integer sit amet egestas eros, vitae egestas augue. Duis vel
-                  est augue.
+                Even if it is the safest type of investment, the degree of risks are still found from like property damage such as abnormal weather, or market fluctuations caused by economical threats.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -146,18 +131,14 @@ const Mortgage = () => {
                 aria-controls="panel7bh-content"
                 id="panel3bh-header"
               >
-                <Typography sx={{ width: "33%", flexShrink: 0 }}>
-                  Advanced settings
+                <Typography sx={{ width: "100%", flexShrink: 0 }}>
+              Where is the best place to invest?
                 </Typography>
-                <Typography sx={{ color: "text.secondary" }}>
-                  Filtering has been entirely disabled for whole web server
-                </Typography>
+              
               </AccordionSummary>
               <AccordionDetails>
                 <Typography>
-                  Nunc vitae orci ultricies, auctor nunc in, volutpat nisl.
-                  Integer sit amet egestas eros, vitae egestas augue. Duis vel
-                  est augue.
+                REVE MEA operates in Lebanon, UAE and the United Kingdom, offering a proper consulting to deliver you the best household you need. Stay in touch with us to know about the latest projects!
                 </Typography>
               </AccordionDetails>
             </Accordion>

@@ -35,6 +35,19 @@ img.guide__img {
 .our-services:hover p {
     color: #fff
 }
+.container-fluid.mb-5 {
+    margin-bottom: 20px;
+}
+.icon {
+    /* width: 100px; */
+    height: 94px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .our-services.settings {
+        height: 350px;
+    }
+}
 
 .speedup:hover {
     box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
@@ -71,3 +84,4 @@ img.guide__img {
     cursor: pointer;
     background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
 }
+

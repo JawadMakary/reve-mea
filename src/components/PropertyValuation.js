@@ -4,16 +4,14 @@ const PropertyValuation = () => {
   return (
     <div>
       <div className="propertyValuation__container">
-      
+
 
         <div className="wrapper">
           <div className="company-info">
             <h3>Book a property valuation</h3>
 
             <span>
-              We have a waitlist of clients ready to view properties, extensive
-              comparable community data and a trusted reputation. Just three of
-              the reasons why people choose us.
+              Communicate with us to go on a tour and view the several properties, get more information along with a highly credible property consulting. Choose wisely, Choose Reve.
             </span>
           </div>
 

@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Banner title={"A Community You Can Call Home"} showButtons={true} bg={"https://i.imgur.com/chszHaD.png"} />
+      <Banner title={"A Community You Can Call Home"} showButtons={true} bg={"https://i.imgur.com/cukytb8.png"} />
       <div className="container">
         <div className="content">
           <Card
@@ -52,18 +52,18 @@ const Home = () => {
         <Info
           title={"Our Mission"}
           description={
-            "lorem ipsum dolor sit amet"
+            "Reve MEA tends to offer programs and services that allow clients to ensure a deluxe stay by maintaining the required knowledge and experience to match the rising demands of property investment."
           }
           image={"https://i.imgur.com/0hsCR3y.jpg"}
         />
         <Info
           title={"Our Vision"}
           description={
-            "lorem ipsum dolor sit amet"
+            "Our committee aims to contribute to social prosperity by creating sustainable and continuous real estate solutions. "
           }
           image={"https://i.imgur.com/8dKOSbv.jpg"}
         />
-        <Info title={"Our Values"} description={"this is the 3rd description"} image={"https://i.imgur.com/yQTuuoX.jpg"} />
+        <Info title={"Our Values"} description={"A guaranteed stay along with integrity and transparency is our most important values. REVE : Reliability, Efficiency, Virtue and Empowerment."} image={"https://i.imgur.com/yQTuuoX.jpg"} />
       </div>
       <Footer />
     </>

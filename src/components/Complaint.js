@@ -7,16 +7,7 @@ function Complaint() {
       <h1 className="complaint__header">Complaint Section</h1>
 
         <span className="complaint__text">
-          Speak to the representative you already interacted with first. If
-          you're still not pleased, it's better to get in touch with the branch
-          manager so they can thoroughly look into your complaint. You can get
-          in touch with us here if you have any more complaints regarding the
-          service or advice you received from us. to reve@reve.com We'll need
-          the following details to assist us in handling your complaint as fast
-          and effectively as possible: names and addresses of you The property
-          address that it may concern, together with the name and branch address
-          of the representative you dealt with a phone number we can reach you
-          at during the day. An explanation of your complaint in detail.
+        We're here to hear you! Let us know if any inconvenience has occurred while dealing with us by speaking to the agent you're operating with. In addition, you can contact us on our e-mail reve@reve.com for more complaints regarding the services we're providing. In order to get your request viewed we need a full list of information: name, property address, branch address and the agent's phone number along with a letter listing your complaints! With REVE MEA, making your voice heard!
         </span>
       </div>
       <div className="complaint__img__container">

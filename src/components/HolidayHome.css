@@ -14,7 +14,12 @@
     cursor: pointer;
     box-shadow: 0 0 5px #000;
 }
-  
+.holidays__home__container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  margin: 20px 0px;
+}  
   .holiday__overlay {
     width: 100%;
     height: 100%;
